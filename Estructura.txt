@@ -1,0 +1,25 @@
+Pizarra: 
+
+App.tsx
+    Pagina Inicio
+    Pagina Juego
+
+Inicio.tsx
+    Boton Juego -> Juego
+    Boton Borrar datos
+
+Juego.tsx
+    Contador de monedas
+    Contador de moneda
+    Contador mejora
+
+Moneda.tsx
+    props: nombre, valor, click
+    Estructura:
+
+Mejora.tsx:
+    props: nombre, costo, cantidad, click
+    Estructura:
+                moneda: simbolo
+                contador 0
+                costo
