@@ -1,17 +1,17 @@
-import React from 'react';
-// : ()
-function Moneda({ nombre, valor, click }: { nombre: string, valor: number, click: () => void }) {
+import React from "react";
 
-
-    
-    return (
-        <div>
-            <p>Nombre: {nombre}</p>
-            <p>Valor: {valor}</p>
-            <button>Multiplicar</button>
-
-        </div>
-    );
+interface MonedaProps {
+  nombre: string;
+  valor: number;
+  onClick: () => void;
 }
+
+const Moneda: React.FC<MonedaProps> = ({ nombre, valor, onClick }) => {
+  return (
+    <button onClick={onClick}>
+      {nombre} (+{valor})
+    </button>
+  );
+};
 
 export default Moneda;

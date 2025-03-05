@@ -1,24 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Inicio from './page/Inicio'
-import Juego from './page/Juego'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "./page/Inicio";
+import Juego from "./page/Juego";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Inicio />}></Route>
-          <Route path="/juego" element={<Juego />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/juego" element={<Juego />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
